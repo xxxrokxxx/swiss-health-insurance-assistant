@@ -1,0 +1,129 @@
+site_name: Swiss Health Insurance Assistant
+site_description: AI-powered health insurance recommendation system for Switzerland
+site_author: Your Name
+site_url: ""
+
+# Repository
+repo_name: your-username/swiss-health-insurance-assistant
+repo_url: https://github.com/your-username/swiss-health-insurance-assistant
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Extensions
+markdown_extensions:
+  - tables
+  - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - mermaid2
+  - glightbox
+  - git-revision-date-localized:
+      type: datetime
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Overview: getting-started/overview.md
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+  - Architecture:
+    - System Overview: architecture/system-overview.md
+    - Frontend: architecture/frontend.md
+    - Backend: architecture/backend.md
+    - Database: architecture/database.md
+    - Infrastructure: architecture/infrastructure.md
+  - Development:
+    - Setup: development/setup.md
+    - Guidelines: development/guidelines.md
+    - Code Style: development/code-style.md
+    - Git Workflow: development/git-workflow.md
+  - API:
+    - Overview: api/overview.md
+    - Authentication: api/authentication.md
+    - Endpoints: api/endpoints.md
+    - Error Handling: api/error-handling.md
+  - Database:
+    - Schema: database/schema.md
+    - Migrations: database/migrations.md
+    - Backup & Recovery: database/backup-recovery.md
+  - Features:
+    - User Management: features/user-management.md
+    - Insurance Comparison: features/insurance-comparison.md
+    - Recommendation Engine: features/recommendation-engine.md
+    - Data Scraping: features/data-scraping.md
+  - Testing:
+    - Strategy: testing/strategy.md
+    - Unit Tests: testing/unit-tests.md
+    - Integration Tests: testing/integration-tests.md
+    - E2E Tests: testing/e2e-tests.md
+  - Deployment:
+    - Environment Setup: deployment/environment-setup.md
+    - CI/CD: deployment/ci-cd.md
+    - Monitoring: deployment/monitoring.md
+  - Security:
+    - Overview: security/overview.md
+    - Authentication: security/authentication.md
+    - Data Protection: security/data-protection.md
+  - Contributing:
+    - Guidelines: contributing/guidelines.md
+    - Code Review Process: contributing/code-review.md
+  - Maintenance:
+    - Backup Procedures: maintenance/backup-procedures.md
+    - Updates: maintenance/updates.md
+    - Troubleshooting: maintenance/troubleshooting.md
+
+# Extra configurations
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username
+  generator: false
