@@ -1,11 +1,11 @@
 site_name: Swiss Health Insurance Assistant
 site_description: AI-powered health insurance recommendation system for Switzerland
 site_author: Rok Zaloznik 
-site_url: https://xxxrokxxx.github.io/swiss-health-insurance-assistant
+site_url: https://rokzaloznik.github.io/swiss-health-insurance-assistant
 
 # Repository
-repo_name: xxxrokxxx/swiss-health-insurance-assistant
-repo_url: https://github.com/xxxrokxxx/swiss-health-insurance-assistant
+repo_name: rokzaloznik/swiss-health-insurance-assistant
+repo_url: https://github.com/rokzaloznik/swiss-health-insurance-assistant
 edit_uri: edit/main/docs/
 
 # Configuration
@@ -125,5 +125,5 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/xxxrokxxx
+      link: https://github.com/rokzaloznik
   generator: false
